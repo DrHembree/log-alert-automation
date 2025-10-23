@@ -1,0 +1,1 @@
+*/15 * * * * /FULL/PATH/log-alert-automation/.venv/bin/python /FULL/PATH/log-alert-automation/src/log_analyzer.py --log /var/log/system.log --out /FULL/PATH/log-alert-automation/reports --format csv json --rules failed_logins errors sudo_failures web_unauthorized --window 300 --threshold 5 >> /FULL/PATH/log-alert-automation/logs/cron.log 2>&1
